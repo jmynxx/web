@@ -1,0 +1,10 @@
+section {
+    background-color: #9EB7E5;
+    height: 100vh;
+    padding: 20px;
+}
+
+input {
+    width: 350px;
+    height: 20px;
+}

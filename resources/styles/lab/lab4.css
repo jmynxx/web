@@ -1,0 +1,47 @@
+#user {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#user th, #user td {
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+#user th {
+    background-color: #a76c8a;
+    color: #f6faff;
+}
+
+#load {
+    padding: 10px 20px;
+    background: #a76c8a;
+    color: #f6faff;
+    border: none;
+    cursor: pointer;
+}
+
+tbody {
+    background-color: #c7a0b4;
+}
+
+section {
+    background: #bea5ca;
+    height: 100vh;
+    padding: 20px;
+    background: url('/resources/src/img/backgr.jpg');
+}
+
+.content_container {
+    width: 95%;
+    height: 95%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.671);
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: start;
+    align-items: center;
+}

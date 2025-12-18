@@ -1,0 +1,71 @@
+  <section id="sect1" class="col1">
+    <i class="bi bi-palette-fill" id="swap"></i>
+    <h2>Раздел 1: менюшка</h2>
+    <nav class="menu-list">
+      <a href="#sect2"><i class="bi bi-image"></i> Раздел 2</a>
+      <a href="#sect3"><i class="bi bi-card-text"></i> Раздел 3</a>
+      <a href="#sect4"><i class="bi bi-plus-square"></i> Раздел 4</a>
+      <a href="#sect5"><i class="bi bi-ui-checks-grid"></i>Раздел 5</a>
+    </nav>
+  </section>
+
+  <section id="sect2" class="col2">
+    <h2>Раздел 2: выбери свою пикмуху</h2>
+    <div style="justify-content: center" class="mini">
+      <div><img src="/resources/src/img/berni.jpg" alt="1" onclick="showImage(this.src)"></div>
+      <div><img src="/resources/src/img/margosha.jpg" alt="2" onclick="showImage(this.src)"></div>
+      <div><img src="/resources/src/img/kadolicshe.jpg" alt="3" onclick="showImage(this.src)"></div>
+      <div><img src="/resources/src/img/temchik.jpg" alt="4" onclick="showImage(this.src)"></div>
+      <div><img src="/resources/src/img/alisonka.jpg" alt="5" onclick="showImage(this.src)"></div>
+      <div><img src="/resources/src/img/kurkovich.jpg" alt="6" onclick="showImage(this.src)"></div>
+    </div>
+    <div id="overlay">
+      <i class="bi bi-x-circle-fill" id="closeImage" style="position: absolute; top: 10px; right: 10px;"></i>
+      <div id="largeImage">
+        <img id="fullImage" src="" alt="big image" style="max-width: 100%; max-height: 100%;">
+      </div>
+    </div>
+  </section>
+
+  <section id="sect3" class="col1">
+    <h2>Раздел 3: рецепт синнабонов</h2>
+    <p style="text-align: justify;">
+      Подготовка ингредиентов. Для теста вам понадобится 550 граммов пшеничной муки,
+      8 граммов сухих дрожжей, 2 куриных яйца, 250 миллилитров молока, 80 граммов сливочного масла,
+      140 граммов сахара и 5 граммов соли. Для начинки используйте 200 граммов коричневого сахара, 25 граммов молотой
+      корицы и ещё 80 граммов сливочного масла. А для крема — 200 граммов сливочного сыра, 70 граммов сливочного масла и
+      100 граммов сахарной пудры. Начните с приготовления теста.<span id="dots">...</span><span style="display:none" id="more">
+        Подогрейте молоко до тёплого состояния (около 35–40 градусов) и растворите в нём дрожжи с чайной ложкой сахара.
+        на 10–15 минут, чтобы дрожжи активировались. В это время просейте муку в большую миску, добавьте сахар и соль.
+        В центре сделайте углубление, вбейте яйца, влейте дрожжевую смесь и растопленное сливочное масло. Замесите тесто
+        сначала ложкой, затем руками. Оно должно быть мягким и слегка липким. Накройте тесто полотенцем и оставьте в
+        тёплом месте на 1–1.5 часа, чтобы оно увеличилось в объёме. После подъёма обомните тесто и раскатайте его в
+        прямоугольник толщиной около 5 мм. Смажьте поверхность размягчённым сливочным маслом, равномерно распределите
+        смесь коричневого сахара и корицы, слегка прижмите начинку к тесту. Аккуратно сверните тесто в рулет, начиная с
+        длинной стороны. Получившийся рулет нарежьте на равные кусочки, обычно получается 10–12 булочек. Выложите их на
+        противень, застеленный пергаментом, оставляя небольшое расстояние между ними. Накройте и оставьте ещё на 30 минут 
+        для второго подъёма. Разогрейте духовку до 180°C. Выпекайте булочки около 25–30 минут, пока они не станут золотистыми 
+        и ароматными. Пока булочки пекутся,приготовьте крем: взбейте сливочный сыр, размягчённое масло и сахарную пудру до однородной 
+        массы. Готовые булочки достаньте из духовки и сразу же смажьте кремом, чтобы он немного растаял и впитался. Bon appétit!
+      </span>
+    </p>
+    <button id="btn" onclick="readMore()">Показать больше</button>
+  </section>
+
+  <section id="sect4" class="col2">
+    <h2>Раздел 4: счетчик до 10</h2>
+    <i class="bi bi-plus-square-fill" id="plus"></i>
+    <span style="font-size: 35px;" id="c">0</span>
+    <p style="font-size: 25px;" id="msg"></p>
+  </section>
+
+  <section style="position: relative;" id="sect5" class="col1">
+    <h2>Раздел 5: опции</h2>
+    <label><input type="checkbox" value="50" onChange="total()">Добавить сникерс +50 какуликс</label><br>
+    <label><input type="checkbox" value="75" onChange="total()">Добавить кока-колу +75 какуликс </label><br>
+    <label><input type="checkbox" value="69.5" onChange="total()">Добавить мороженое +69.5 какуликс</label><br>
+    <label><input type="checkbox" value="250" onChange="total()">Добавить торт Наполеон +250 какуликс</label><br>
+    <label><input type="checkbox" value="95.5" onChange="total()">Добавить кислые червячки +95.5 какуликс</label><br>
+    <div style="font-size: 25px; margin-top: 10px;" id="price"> Итого: 0 какуликс</div>
+    <i style="position: absolute; bottom: 20px; right: 20px;" class="bi bi-arrow-up-circle-fill" id="up"></i>
+  </section>
