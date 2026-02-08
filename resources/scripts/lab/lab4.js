@@ -22,7 +22,6 @@ $(document).ready(function() {
                 <tr>
                     <td>${user.id}</td>
                     <td>${user.name}</td>
-                    <td>${user.age}</td>
                     <td>${user.mail}</td>
                 </tr>
             `;
